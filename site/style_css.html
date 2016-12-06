@@ -1,0 +1,31 @@
+.Section1,.Section2,.Section3{
+  height : 200px;
+  box-sizing : border-box;
+  padding : 10px;
+  border : 10px solid-black;
+ background-color : #00ffee;
+}
+
+@media(min-width : 992px)
+{
+  .Section1,.Section2{
+    width: 30%;
+    margin: 2%;
+  }
+  .Section3{
+    width: 30%;
+    margin: 1%;
+  }
+}
+@media((max-width : 991px) and (minwidth : 768px))
+{
+.Section1,.Section2,.Section3{
+  width :42%;
+  margin:2%;
+}
+}
+@media(max-width: 767px){
+  .Section1,.Section2,.Section3{
+  width: 96%;
+  margin : 2%;}
+}
