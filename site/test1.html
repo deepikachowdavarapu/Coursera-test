@@ -2,19 +2,92 @@
 <html>
 <head>
 	<link href="style_css.css" rel="stylesheet" type="text/css">
+	<style>
+	.Section1,.Section2,.Section3{
+    position:relative;
+  height : 200px;
+  box-sizing : border-box;
+  padding : 10px;
+ 
+ background-color : #00ffee;
+ float:left;
+ border :5px solid black;
+}
+.Subtitle1{
+position:absolute;
+width:100px;
+right:0px;
+top:-20px;
+background-color:red;
+border:5px solid black;
+}
+.Subtitle2{
+width:100px;
+position:absolute;
+right:0px;
+top:-20px;
+background-color:blue;
+border:5px solid black;
+}
+.Subtitle3{
+width:100px;
+position:absolute;
+right:0px;
+top:-20px;
+background-color:yellow;
+border:5px solid black;
+}
+@media(min-width : 992px)
+{
+  .Section1,.Section2{
+    width: 30%;
+    margin: 2%;
+  }
+  .Section3{
+    width: 30%;
+   margin-top : 2%;
+    margin-right:1%;
+    margin-left: 1%;
+    margin-bottom : 2%;
+  }
+}
+@media(max-width : 991px) and (min-width : 768px)
+{
+.Section1,.Section2{
+  width :46%;
+  margin:2%;
+}
+.Section3{
+width:96%;
+margin : 2%;
+}
+}
+@media(max-width: 767px){
+  .Section1,.Section2,.Section3{
+  width: 96%;
+  margin : 2%;}
+}
+	</style>
 </head>
 <body>
 <h1 style="text-align: center;">  </h1>
 <div>
-<p class="Section1">Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg 
+<div class="Section1">
+<p class="Subtitle1">Chicken</p>
+<p>Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg</p>
 
-</p>
-<p class="Section2">Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg 
 
+</div>
+<div class="Section2">
+<p class="Subtitle2">Beef</p>
+<p>Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg 
 </p>
-<p class="Section3">Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg 
+</div>
+<div class="Section3">
+<p class="Subtitle3">Sushi</p>
+<p>Loriwejndgf sdhfdn vdsuhfsdkvndsufhdf ouhydfo sudfy sodufy osdfy osdufhsdj h sdkufhodsughodsg odiug hyosdhfduofodyhfody osdif h sdofyhdofuh dosg</p> 
 
-</p>
+</div>
 </div>
 </body>
 </html>
